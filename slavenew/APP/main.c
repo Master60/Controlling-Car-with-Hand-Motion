@@ -6,10 +6,10 @@
  */
 
 #include "Projects.h"
-#define TRANSMIT (20)
+#define TRANSMIT (0)
 #define RECEIVE (3)
 #define MOTORWORK (1)
-#define MOTORTEST (8)
+#define MOTORTEST (85)
 #define DIGITAL    (6)
 //void A_EXT_INT0_Execution(void);
 //void A_Timer0_Execution(void);
@@ -165,17 +165,52 @@ M_UART_Void_UARTSetBaudRate(9600);
     M_ADC_Void_ADCInit();
 	H_LCD_Void_LCDInit();
 	M_UART_Void_UARTInit();
+	H_LED_Void_LedInit(LED0);
+	H_LED_Void_LedInit(LED1);
+	H_LED_Void_LedInit(LED2);
 	M_UART_Void_UARTSetBaudRate(9600);
+//	M_Timer_Void_PWMInit(TIMER0_CHANNEL);
+//	M_Timer_Void_TimerStart(TIMER0_CHANNEL);
 
 while(1)
 {
     //M_UART_Void_UARTSend(H_Flex_Sensor_U8_SenosorRead(SENSOR1_READING));
-     //H_LCD_Void_LCDWriteNumber(H_Flex_Sensor_U8_SenosorRead(SENSOR1_READING));
+
+       H_LCD_Void_LCDWriteNumber(H_Flex_Sensor_U8_SenosorRead(SENSOR1_READING));
+     //H_LCD_Void_LCDGoTo(1,1);
+     //H_LCD_Void_LCDWriteNumber(M_ADC_U16_ADCRead(ADC_CHANNEL_3));
+     //u16 rec= M_ADC_U16_ADCRead(ADC_CHANNEL_0);
+    // H_LCD_Void_LCDWriteNumber(rec);
+//     if((rec>95) && (rec<115))
+//     {
+//    	 H_LED_Void_LedSetOn(LED0);
+//    	 _delay_ms(500);
+//    	 H_LED_Void_LedSetOff(LED0);
+//    	 _delay_ms(500);
+//     }
+//     else if((rec>=115) && (rec<140))
+//     {
+//    	 H_LED_Void_LedSetOn(LED1);
+//    	 _delay_ms(500);
+//    	 H_LED_Void_LedSetOff(LED1);
+//    	 _delay_ms(500);
+//     }
+//     else
+//     {
+//    	 H_LED_Void_LedSetOn(LED2);
+//    	 _delay_ms(500);
+//    	 H_LED_Void_LedSetOff(LED2);
+//    	 _delay_ms(500);
+//     }
+
+    // M_Timer_Void_PWMSetDutyCycle(TIMER0_CHANNEL,(H_Flex_Sensor_U8_SenosorRead(SENSOR1_READING)%100));
+
 	//H_Flex_Sensor_U8_SenosorRead(SENSOR1_READING)
 	M_UART_Void_UARTSend(5);
-    _delay_ms(200);
+   _delay_ms(200);
     H_LCD_Void_LCDClear();
     _delay_ms(100);
+}
 }
 //End transmit
 #endif
