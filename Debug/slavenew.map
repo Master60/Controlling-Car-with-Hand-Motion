@@ -189,7 +189,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2860
+.text           0x00000000     0x2832
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -540,79 +540,79 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .text.H_HC_05_Void_HC_05_Init
                 0x0000242c       0x12 ./HAL/HC_05/HC_05_Prog.o
                 0x0000242c                H_HC_05_Void_HC_05_Init
- .text.H_Flex_Sensor_U8_SenosorRead
-                0x0000243e       0x46 ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
-                0x0000243e                H_Flex_Sensor_U8_SenosorRead
- .text.H_Flex_Sensor_Void_SenosorInit
-                0x00002484        0x6 ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
-                0x00002484                H_Flex_Sensor_Void_SenosorInit
+ .text.u8_Read_Flexible_Sensor
+                0x0000243e       0x1c ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
+                0x0000243e                u8_Read_Flexible_Sensor
+ .text.H_Flexible_SensorInit
+                0x0000245a        0x6 ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
+                0x0000245a                H_Flexible_SensorInit
  .text.H_DCMotor_Void_DCMotorStop
-                0x0000248a        0x8 ./HAL/DCMotor/DCMotor_Prog.o
-                0x0000248a                H_DCMotor_Void_DCMotorStop
+                0x00002460        0x8 ./HAL/DCMotor/DCMotor_Prog.o
+                0x00002460                H_DCMotor_Void_DCMotorStop
  .text.H_DCMotor_Void_DCMotorStart
-                0x00002492        0x8 ./HAL/DCMotor/DCMotor_Prog.o
-                0x00002492                H_DCMotor_Void_DCMotorStart
+                0x00002468        0x8 ./HAL/DCMotor/DCMotor_Prog.o
+                0x00002468                H_DCMotor_Void_DCMotorStart
  .text.H_DCMotor_Void_DCMotorSetDirection
-                0x0000249a       0x3e ./HAL/DCMotor/DCMotor_Prog.o
-                0x0000249a                H_DCMotor_Void_DCMotorSetDirection
+                0x00002470       0x3e ./HAL/DCMotor/DCMotor_Prog.o
+                0x00002470                H_DCMotor_Void_DCMotorSetDirection
  .text.H_DCMotor_Void_DCMotorSetSpeed
-                0x000024d8       0x10 ./HAL/DCMotor/DCMotor_Prog.o
-                0x000024d8                H_DCMotor_Void_DCMotorSetSpeed
+                0x000024ae       0x10 ./HAL/DCMotor/DCMotor_Prog.o
+                0x000024ae                H_DCMotor_Void_DCMotorSetSpeed
  .text.H_DCMotor_Void_DCMotorInit
-                0x000024e8       0x2e ./HAL/DCMotor/DCMotor_Prog.o
-                0x000024e8                H_DCMotor_Void_DCMotorInit
+                0x000024be       0x2e ./HAL/DCMotor/DCMotor_Prog.o
+                0x000024be                H_DCMotor_Void_DCMotorInit
  .text.H_Buzzer_Void_BuzzerOnce
-                0x00002516       0x26 ./HAL/Buzzer/Buzzer_Prog.o
-                0x00002516                H_Buzzer_Void_BuzzerOnce
+                0x000024ec       0x26 ./HAL/Buzzer/Buzzer_Prog.o
+                0x000024ec                H_Buzzer_Void_BuzzerOnce
  .text.H_Buzzer_Void_BuzzerSetOff
-                0x0000253c        0xa ./HAL/Buzzer/Buzzer_Prog.o
-                0x0000253c                H_Buzzer_Void_BuzzerSetOff
+                0x00002512        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x00002512                H_Buzzer_Void_BuzzerSetOff
  .text.H_Buzzer_Void_BuzzerSetOn
-                0x00002546        0xa ./HAL/Buzzer/Buzzer_Prog.o
-                0x00002546                H_Buzzer_Void_BuzzerSetOn
+                0x0000251c        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x0000251c                H_Buzzer_Void_BuzzerSetOn
  .text.H_Buzzer_Void_BuzzerInit
-                0x00002550        0xa ./HAL/Buzzer/Buzzer_Prog.o
-                0x00002550                H_Buzzer_Void_BuzzerInit
+                0x00002526        0xa ./HAL/Buzzer/Buzzer_Prog.o
+                0x00002526                H_Buzzer_Void_BuzzerInit
  .text.H_AT24C16A_Void_EEPROMRead
-                0x0000255a       0x36 ./HAL/AT24C16A/AT24C16A_Prog.o
-                0x0000255a                H_AT24C16A_Void_EEPROMRead
+                0x00002530       0x36 ./HAL/AT24C16A/AT24C16A_Prog.o
+                0x00002530                H_AT24C16A_Void_EEPROMRead
  .text.H_AT24C16A_Void_EEPROMWrite
-                0x00002590       0x30 ./HAL/AT24C16A/AT24C16A_Prog.o
-                0x00002590                H_AT24C16A_Void_EEPROMWrite
+                0x00002566       0x30 ./HAL/AT24C16A/AT24C16A_Prog.o
+                0x00002566                H_AT24C16A_Void_EEPROMWrite
  .text.H_AT24C16A_Void_EEPROMInit
-                0x000025c0       0x1a ./HAL/AT24C16A/AT24C16A_Prog.o
-                0x000025c0                H_AT24C16A_Void_EEPROMInit
+                0x00002596       0x1a ./HAL/AT24C16A/AT24C16A_Prog.o
+                0x00002596                H_AT24C16A_Void_EEPROMInit
  .text.A_EEPROM_Project
-                0x000025da       0x6a ./APP/Projects/Projects.o
-                0x000025da                A_EEPROM_Project
+                0x000025b0       0x6a ./APP/Projects/Projects.o
+                0x000025b0                A_EEPROM_Project
  .text.A_HC05Project
-                0x00002644       0x1c ./APP/Projects/Projects.o
-                0x00002644                A_HC05Project
+                0x0000261a       0x1c ./APP/Projects/Projects.o
+                0x0000261a                A_HC05Project
  .text.A_SSDProject
-                0x00002660       0x38 ./APP/Projects/Projects.o
-                0x00002660                A_SSDProject
- .text.main     0x00002698       0x86 ./APP/main.o
-                0x00002698                main
- .text.libgcc   0x0000271e       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x0000271e                __mulsi3
- .text.libgcc   0x0000275c       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
-                0x0000275c                __udivmodqi4
- .text.libgcc   0x00002774       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x00002774                __udivmodsi4
- .text.libgcc   0x000027b8       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
-                0x000027b8                __divmodsi4
- .text.libgcc   0x000027ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000027ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000027ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000027ee       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000027ee                __prologue_saves__
- .text.libgcc   0x00002826       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00002826                __epilogue_restores__
-                0x0000285c                . = ALIGN (0x2)
+                0x00002636       0x38 ./APP/Projects/Projects.o
+                0x00002636                A_SSDProject
+ .text.main     0x0000266e       0x82 ./APP/main.o
+                0x0000266e                main
+ .text.libgcc   0x000026f0       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x000026f0                __mulsi3
+ .text.libgcc   0x0000272e       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x0000272e                __udivmodqi4
+ .text.libgcc   0x00002746       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002746                __udivmodsi4
+ .text.libgcc   0x0000278a       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000278a                __divmodsi4
+ .text.libgcc   0x000027c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000027c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000027c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000027c0       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x000027c0                __prologue_saves__
+ .text.libgcc   0x000027f8       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000027f8                __epilogue_restores__
+                0x0000282e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000285c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x0000285c                exit
-                0x0000285c                _exit
+ .fini9         0x0000282e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000282e                exit
+                0x0000282e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -631,11 +631,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000285c        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000282e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002860                _etext = .
+                0x00002832                _etext = .
 
-.data           0x00800060      0x118 load address 0x00002860
+.data           0x00800060      0x118 load address 0x00002832
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -771,8 +771,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  COMMON         0x0080018b        0x2 ./MCAL/EXT_INT/EXT_INT_Prog.o
                 0x0080018b                EXT_INT_CallBack
                 0x0080018d                PROVIDE (__bss_end, .)
-                0x00002860                __data_load_start = LOADADDR (.data)
-                0x00002978                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002832                __data_load_start = LOADADDR (.data)
+                0x0000294a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080018d        0x0
                 0x0080018d                PROVIDE (__noinit_start, .)
@@ -797,7 +797,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x5328
+.stab           0x00000000     0x52bc
  *(.stab)
  .stab          0x00000000      0x1f8 ./MCAL/WDT/WDT_Prog.o
  .stab          0x000001f8      0x360 ./MCAL/UART/UART_Prog.o
@@ -834,22 +834,22 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                                 0x624 (size before relaxing)
  .stab          0x00003e28      0x1a4 ./HAL/HC_05/HC_05_Prog.o
                                 0x21c (size before relaxing)
- .stab          0x00003fcc      0x1d4 ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
-                                0x258 (size before relaxing)
- .stab          0x000041a0      0x2e8 ./HAL/DCMotor/DCMotor_Prog.o
+ .stab          0x00003fcc      0x1b0 ./HAL/Flex_Sensor/Flex_Sensor_Prog.o
+                                0x234 (size before relaxing)
+ .stab          0x0000417c      0x2e8 ./HAL/DCMotor/DCMotor_Prog.o
                                 0x528 (size before relaxing)
- .stab          0x00004488      0x288 ./HAL/Buzzer/Buzzer_Prog.o
+ .stab          0x00004464      0x288 ./HAL/Buzzer/Buzzer_Prog.o
                                 0x498 (size before relaxing)
- .stab          0x00004710      0x330 ./HAL/AT24C16A/AT24C16A_Prog.o
+ .stab          0x000046ec      0x330 ./HAL/AT24C16A/AT24C16A_Prog.o
                                 0x534 (size before relaxing)
- .stab          0x00004a40      0x564 ./APP/Projects/Projects.o
+ .stab          0x00004a1c      0x564 ./APP/Projects/Projects.o
                                 0x78c (size before relaxing)
- .stab          0x00004fa4      0x384 ./APP/main.o
-                                0x5d0 (size before relaxing)
+ .stab          0x00004f80      0x33c ./APP/main.o
+                                0x588 (size before relaxing)
 
-.stabstr        0x00000000     0x26fd
+.stabstr        0x00000000     0x26ef
  *(.stabstr)
- .stabstr       0x00000000     0x26fd ./MCAL/WDT/WDT_Prog.o
+ .stabstr       0x00000000     0x26ef ./MCAL/WDT/WDT_Prog.o
 
 .stab.excl
  *(.stab.excl)

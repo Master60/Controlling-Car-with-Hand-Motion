@@ -4,7 +4,7 @@
  *  Created on: ???/???/????
  *      Author: dell
  */
-
+\
 #ifndef MCAL_UART_UART_PRIVATE_H_
 #define MCAL_UART_UART_PRIVATE_H_
 

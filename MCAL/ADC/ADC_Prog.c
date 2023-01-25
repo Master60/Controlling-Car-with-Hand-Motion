@@ -74,6 +74,7 @@ u16  M_ADC_U16_ADCRead(u8 Copy_U8_AdcChannel)
 		SET_BIT(ADMUX_REG,MUX1_BIT);
 		SET_BIT(ADMUX_REG,MUX0_BIT);
 		break;
+
 	default:  break;
 	}
 	/* TO START CONVERTION */
