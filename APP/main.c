@@ -31,7 +31,7 @@ int main()
 		H_DCMotor_Void_DCMotorSetDirection(CW);
 		H_DCMotor_Void_DCMotorStart();
 	    H_LCD_Void_LCDClear();
-		u8 recieved = 150;
+		u8 recieved = 0;
 
 			while(1)
 			{
